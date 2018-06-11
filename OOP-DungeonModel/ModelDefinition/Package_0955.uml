@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="25ee766f-ea98-46fe-880f-5a976fa05004"
+  name="DunggeonView" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="76e3afbf-5f49-461f-8de1-0b685fffadd7"
+        name="DungeonView"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="99f3f402-ee47-42b2-8550-44ed20e44be2"
+            isDerived="false"
+            sourceEndRoleName="DungeonView"
+            targetEndRoleName="Dungeon"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="61ecda3f-1ba9-4ae6-8aef-b77797d07e9d"
+              LastKnownName="Dungeon"
+              LastKnownLocation="Package_0946.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d9bd948-8c05-45d0-b34c-14dabc8a7dba"
+                  name="DungeonView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0004896-b9be-4dba-a66e-1eceb9a57c9c"
+                  name="Dungeon"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="8582c033-82e6-46de-ac1a-2fe8bcd53a2d"
+            name="draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="873b1e02-4c1a-4f1a-a7e0-fcf215b6eed8"
+        name="ConsoleDungeonView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b25b4413-81bc-4424-a31b-93ff0b9fc43f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="76e3afbf-5f49-461f-8de1-0b685fffadd7"
+              LastKnownName="DungeonView"
+              LastKnownLocation="Package_0955.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6ddb0f2b-5fdd-4ff7-b63a-ebd236339478"
+            name="draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

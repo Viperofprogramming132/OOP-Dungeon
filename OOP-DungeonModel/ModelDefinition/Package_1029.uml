@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="95268618-a684-4039-b4df-fed7b43fba3f"
+  name="DungeonControler" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="8d5abda6-fa15-4aec-85cc-66e5fac7f6a7"
+        name="DungeonController"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1490d872-5cf7-4c90-9d74-d4949c9b15d6"
+            isDerived="false"
+            sourceEndRoleName="DungeonController"
+            targetEndRoleName="Dungeon"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="61ecda3f-1ba9-4ae6-8aef-b77797d07e9d"
+              LastKnownName="Dungeon"
+              LastKnownLocation="Package_0946.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="179687b9-6a05-436a-8b71-e9bbe2578ca6"
+                  name="DungeonController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d4675e6-ea04-4282-8662-e4a058aa0448"
+                  name="Dungeon"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="aaa6c887-c820-4ba2-a81f-e40c5f2f7e7d"
+            name="takeTurn"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2146ebc5-8ae8-49ac-a1af-374ce19dc4e4"
+        name="ConsoleDungeonControler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="db91935d-9c82-44b9-82a1-75b26fc7b0f1"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8d5abda6-fa15-4aec-85cc-66e5fac7f6a7"
+              LastKnownName="DungeonController"
+              LastKnownLocation="Package_1029.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2cb7cb34-7a39-4cc3-bb3e-85be6995f6c0"
+            name="takeTurn"
+            isLeaf="true"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3720c04f-fd4c-4ef8-864a-712caa0e1cae"
+            name="getValidKey"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

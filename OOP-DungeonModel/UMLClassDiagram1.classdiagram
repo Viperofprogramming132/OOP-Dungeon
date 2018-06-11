@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="aa615517-7d23-4b84-bc31-751c2804aa9e" name="UMLClassDiagram1" linkedPackageId="b23a5f28-a0fa-41b6-adf3-163eae9b2835" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="50e46ad9-b55f-4be1-8297-50885fd964c1">
+      <profileInstance Id="6b179417-c5ab-4f47-9a82-606d625d5bd5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9b29ae3d-bd00-4a0f-9bca-a6ffab9217fd">
+      <profileInstance Id="23f23970-c8d3-426e-899d-3a01a08e7dbd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="2bd4e026-f6c4-462c-aaab-39159a4facce" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e3d4fed2-fee2-49fa-8cf1-27f8858d05c5" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3a829142-2ce3-45e5-b42e-2ba4fae393e7" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="7aece7c4-8b05-4b46-87ef-5f1ae79ade33" name="DungeonModel">
+        <elementDefinition Id="a28be205-50a5-493a-a042-ec1769b019d8" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="cb563ba9-e30d-46a6-8bb1-51e38822135d" name="DungeonMap" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8b3b4ef2-a7ba-44c5-b3e4-de2a1a07e3b6" />
+              <ownedAttributesInternal>
+                <property Id="5561462f-7a2e-43bb-a66a-79461d12bf9e" name="m_map" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3e4ef825-4127-46e6-b939-3631d61eb9f6" />
+                </property>
+                <property Id="64e80608-6964-4509-9293-ba2e56a599b3" name="m_loaded" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3f57ece6-5734-4b68-91e7-c8bf76257362" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2bd4e026-f6c4-462c-aaab-39159a4facce" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </property>
+                <property Id="f6d96a09-4dd8-40b5-a138-ad3f8ed2a759" name="m_height" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5eb1e635-8e7b-4337-8b49-bb66a18c3bd8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3a829142-2ce3-45e5-b42e-2ba4fae393e7" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+                <property Id="3ab6799d-9a58-45b2-8a3a-dbb9bda93718" name="m_width" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6bab3537-6229-4b9f-9694-23a1ce2eb0fe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e3d4fed2-fee2-49fa-8cf1-27f8858d05c5" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="28195d31-a8dd-4ddf-a374-3ce86d450270" name="load" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e0fa0075-f6f9-452c-be06-a5cff13adcca" />
+                </operation>
+                <operation Id="a41eb6ba-449d-424a-98c6-af23d548b361" name="getTile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8d169b59-3888-49e2-8fe4-657828e544ab" />
+                </operation>
+                <operation Id="8a69ad6f-5743-48af-83dd-8dc2b1a1f2f8" name="isValidMove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ad13b6a7-e16a-42b8-9add-e656a7bd69ba" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ef4e6957-c19e-4d5d-b3ad-76b2606339a1" name="Character" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f1ebcd46-e213-4cb0-88c0-65a48b8f8cf5" />
+              <ownedAttributesInternal>
+                <property Id="84c59aeb-dafd-4515-b4ba-5a57f9f28bc1" name="m_symbol" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b443f7c-56d3-4a49-802a-bf9a89656a0b" />
+                </property>
+                <property Id="a5611857-86e1-4436-a591-d50e9ed18175" name="m_pos" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e5c313d8-8f6e-4ed2-926e-abc957d46fbd" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="745cd613-fe95-4587-9641-c4738bf5b0f9" name="getPos" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a142b268-9209-41e5-9688-7aa40572d358" />
+                </operation>
+                <operation Id="f896f088-b1d1-49e5-a171-8be88590376c" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b5c80691-39ac-4951-8add-4e3ad2d5be51" />
+                </operation>
+                <operation Id="f8017c4c-7bb8-4c29-8d2b-dc52c3c37b85" name="getNewPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="476ce217-4f68-4444-b370-71a9a9e62877" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="91765f62-159a-4b52-b103-3420e01cff34" name="Dungeon" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="61ecda3f-1ba9-4ae6-8aef-b77797d07e9d" />
+              <targetEnds>
+                <association Id="306dadd4-1cc5-4261-8d71-eb729a003921" isDerived="false" sourceEndRoleName="Dungeon" targetEndRoleName="Character" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="ef4e6957-c19e-4d5d-b3ad-76b2606339a1" LastKnownName="Character" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ba97e3d6-f6e2-4bac-a0c6-04520e0434a4" name="Dungeon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="62ca16c2-4e3d-4d06-9768-0953cf1852d6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1ed77194-d0b5-491b-bf22-7672906084b8" name="Character" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="dd4caa7e-26d6-489c-824c-cfa0570e4a13" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="c43fb561-5487-48c6-bfbb-f8e68cc01c6f" />
+                </association>
+                <association Id="a926773d-35e8-40e7-8f3c-10d23651f240" isDerived="false" sourceEndRoleName="Dungeon" targetEndRoleName="DungeonMap" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="cb563ba9-e30d-46a6-8bb1-51e38822135d" LastKnownName="DungeonMap" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ee5d235f-6ffe-4b0a-8b8c-12989b194381" name="Dungeon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="6cd820e2-aed1-446f-8714-c1485b2eabe9" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e3cc746d-c742-4a0c-bf30-5f896f36beed" name="DungeonMap" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="32c0b0db-f197-4361-b6d9-f0a93d871099" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="29c3dc51-113f-4900-a96e-32d60f4c453f" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="e4640323-f171-4732-bcfa-4c211d869994" name="getPlayer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="379c72a5-14d5-4545-a913-2289f7c40d44" />
+                </operation>
+                <operation Id="916aa687-674d-4585-b5a9-f2377620bbee" name="geMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e3b64f2d-b39c-464c-862d-4fd9a828f4f8" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="10099f24-d07d-41e4-8595-656408b5ec58" name="DunggeonView">
+        <elementDefinition Id="25ee766f-ea98-46fe-880f-5a976fa05004" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="cee966fb-4da9-4b09-bd8f-3c7e40dc968e" name="DungeonView" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="76e3afbf-5f49-461f-8de1-0b685fffadd7" />
+              <targetEnds>
+                <association Id="b359217b-939c-4025-a7cb-a52c5d79439d" isDerived="false" sourceEndRoleName="DungeonView" targetEndRoleName="Dungeon" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="91765f62-159a-4b52-b103-3420e01cff34" LastKnownName="Dungeon" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="0f98e001-aaa5-48f6-b0d0-45711c824f5a" name="DungeonView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="4d9bd948-8c05-45d0-b34c-14dabc8a7dba" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="20ef21f2-2dd3-4894-a45d-14dacf91b017" name="Dungeon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="b0004896-b9be-4dba-a66e-1eceb9a57c9c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="99f3f402-ee47-42b2-8550-44ed20e44be2" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="c903aef7-a852-47a2-99be-ef8b34973481" name="draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8582c033-82e6-46de-ac1a-2fe8bcd53a2d" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8b4b0a99-ed1d-4237-bf94-14299fc8f1c8" name="ConsoleDungeonView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="873b1e02-4c1a-4f1a-a7e0-fcf215b6eed8" />
+              <generalsInternal>
+                <generalization Id="9ca7faee-b85c-47c0-a479-316945093b70" isSubstitutable="false">
+                  <classMoniker Id="cee966fb-4da9-4b09-bd8f-3c7e40dc968e" LastKnownName="DungeonView" />
+                  <elementDefinition Id="b25b4413-81bc-4424-a31b-93ff0b9fc43f" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="e318b575-8280-427d-8c02-e3d60a47a60d" name="draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6ddb0f2b-5fdd-4ff7-b63a-ebd236339478" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="9cc9df66-b5d0-4753-82d4-58f2d866e86b" name="DungeonControler">
+        <elementDefinition Id="95268618-a684-4039-b4df-fed7b43fba3f" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="fe21a88d-32a8-4c5f-86b6-479c98ff831b" name="DungeonController" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8d5abda6-fa15-4aec-85cc-66e5fac7f6a7" />
+              <targetEnds>
+                <association Id="6728438c-462f-458f-9b05-4241be15058a" isDerived="false" sourceEndRoleName="DungeonController" targetEndRoleName="Dungeon" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="91765f62-159a-4b52-b103-3420e01cff34" LastKnownName="Dungeon" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="58b63136-6d7c-4286-ac3f-fd418b5e1093" name="DungeonController" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="179687b9-6a05-436a-8b71-e9bbe2578ca6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="364df87e-c71b-44dc-9073-af75e55ce1bd" name="Dungeon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="0d4675e6-ea04-4282-8662-e4a058aa0448" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="1490d872-5cf7-4c90-9d74-d4949c9b15d6" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="9e0975a0-644c-4cd6-92af-11d31b390f55" name="takeTurn" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="aaa6c887-c820-4ba2-a81f-e40c5f2f7e7d" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8b6b7bdf-27f5-4460-88ea-5fc8ee70a168" name="ConsoleDungeonControler" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2146ebc5-8ae8-49ac-a1af-374ce19dc4e4" />
+              <generalsInternal>
+                <generalization Id="06f5a819-9d8a-4dd3-9145-50566da0a816" isSubstitutable="false">
+                  <classMoniker Id="fe21a88d-32a8-4c5f-86b6-479c98ff831b" LastKnownName="DungeonController" />
+                  <elementDefinition Id="db91935d-9c82-44b9-82a1-75b26fc7b0f1" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="2fb3666f-749f-48ac-8eee-c8503bb0a3cb" name="takeTurn" isLeaf="true" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2cb7cb34-7a39-4cc3-bb3e-85be6995f6c0" />
+                </operation>
+                <operation Id="36e2d932-358a-4981-b860-2fd1bb4dc99f" name="getValidKey" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3720c04f-fd4c-4ef8-864a-712caa0e1cae" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="b23a5f28-a0fa-41b6-adf3-163eae9b2835" name="OOP-DungeonModel">
+    <elementDefinition Id="291b9bf5-c0ec-4961-a4eb-3d9b8cb9e790" />
+  </package>
+</logicalClassDesignerModel>

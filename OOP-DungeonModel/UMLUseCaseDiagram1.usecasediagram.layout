@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+  <useCaseModelRootMoniker Id="4d90b1e5-682e-4bfc-9357-7c790e14ab90" />
+  <nestedChildShapes>
+    <actorShape Id="764b49a6-4e30-46e0-b07d-949714656e67" absoluteBounds="2.125, 1.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="8704be5b-7699-474a-8c6b-73920f5cd789" LastKnownName="Player" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="e1426e9b-313b-402e-bd01-966121af1eb5" absoluteBounds="3.125, 1.5, 3, 2.5" customColor="White">
+      <subsystemMoniker Id="ca978872-60ed-4f11-be2f-33d74f1dae55" LastKnownName="Subsystem1" />
+      <nestedChildShapes>
+        <useCaseShape Id="dcc930ec-f582-40b6-99f7-2db933bf96f3" absoluteBounds="3.875, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="4f667453-2c9a-4882-b56a-fbe3f21f4001" LastKnownName="Move Character" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(2.625 : 2.171875); (3.90683541121548 : 2.4122191396029)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="61cc0d2f-cd49-4cba-9771-e881dc5cc801" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="764b49a6-4e30-46e0-b07d-949714656e67" />
+        <useCaseShapeMoniker Id="dcc930ec-f582-40b6-99f7-2db933bf96f3" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,1776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="291b9bf5-c0ec-4961-a4eb-3d9b8cb9e790"
+  name="OOP-DungeonModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a28be205-50a5-493a-a042-ec1769b019d8"
+        LastKnownName="DungeonModel"
+        LastKnownLocation="Package_0946.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="25ee766f-ea98-46fe-880f-5a976fa05004"
+        LastKnownName="DunggeonView"
+        LastKnownLocation="Package_0955.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="95268618-a684-4039-b4df-fed7b43fba3f"
+        LastKnownName="DungeonControler"
+        LastKnownLocation="Package_1029.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="15cdbe49-4365-45d0-b7e2-bbd26d8b3d7f"
+        name="Player"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2ad3ef89-d1a5-467b-98e1-0d7ec3ff5e8a"
+            isDerived="false"
+            sourceEndRoleName="Player"
+            targetEndRoleName="Move Character"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6fc96c00-fd57-4cca-998c-8c40266e71cf"
+              LastKnownName="Move Character"
+              LastKnownLocation="OOP-DungeonModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5e0eab4-2a31-4d2b-9b39-365e6be82da7"
+                  name="Player"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a40f92a-d881-49f3-a7f6-6b57ed727f76"
+                  name="Move Character"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6fc96c00-fd57-4cca-998c-8c40266e71cf"
+        name="Move Character"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c16ca5e0-fa80-4463-ac7d-3aa85c6d0d09"
+            LastKnownName="Subsystem1"
+            LastKnownLocation="OOP-DungeonModel.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c16ca5e0-fa80-4463-ac7d-3aa85c6d0d09"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="55d6b44d-cfa8-4024-82ab-4a432a4af3b5"
+        name="Take Turn"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="76826994-a936-4ccc-be8d-2622dc5dbc9f"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="fee61613-b6f6-4597-b532-750baedc2990"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a0878f14-e0e2-487c-a4d9-10017281ccd7"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a02b7ea2-e773-4f5e-b136-a2c587cd8400"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1f9cae58-99ab-42c6-9b84-3ecd95dc3030"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4372d293-7bb6-4567-892f-f6e757ee78cd"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a7f711e3-8acc-40d6-9664-30afbb5b4244"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8631d64b-ab10-435e-9556-dd7d3f3d952b"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ec24f15e-30dc-4d2e-83ff-7efa2fbe1f2a"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3ade7c7c-954e-4658-b0b0-fc9b80037d2d"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="aae24be9-8555-417b-b06d-e1d4190d452f"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9b563003-316d-4884-ad7a-73e5fa0d610b"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ea979081-75cf-4ba6-b014-e3492ba3ca72"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c4ea3eb1-1479-471b-9d7c-b573305378d7"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8a9327fd-e066-4c33-b7f9-83118ac4e3c4"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ad14cfaa-4019-45fa-8ee7-ea1026ea9c2b"
+                LastKnownName="OperandOccurrenceSpecification15"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7b5e9d54-a6ef-47ce-aa0f-d8320900d48f"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="767fd4f6-43e1-4a6a-8c53-d8883d0ad38f"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="dd79cf0c-513a-4ace-bf17-76e75b107425"
+                LastKnownName="OperandOccurrenceSpecification16"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="a3fd7778-7040-4dfb-8183-ba527189226d"
+                LastKnownName="OperandOccurrenceSpecification19"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="0187ebbf-099b-4036-8b1c-635a506524a5"
+                LastKnownName="OperandOccurrenceSpecification20"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a0878f14-e0e2-487c-a4d9-10017281ccd7"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8f104d8e-12b2-4fb8-86d1-2d2b6bb4a10e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget
+            Id="8494baea-7bc6-449f-9572-000431304602"
+            name="LostFoundTarget1" />
+          <messageOccurrenceSpecification
+            Id="a02b7ea2-e773-4f5e-b136-a2c587cd8400"
+            name="MessageOccurrenceSpecification1">
+            <event>
+              <receiveOperationEventMoniker
+                Id="25b72055-64b6-4c52-839a-66417c9d04c8"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1f9cae58-99ab-42c6-9b84-3ecd95dc3030"
+            name="MessageOccurrenceSpecification2">
+            <event>
+              <sendOperationEventMoniker
+                Id="bc35e0b4-a3f5-4c2e-91df-13e0c6149db5"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="37aa4455-7ea3-4991-bed2-ea679ea6e1db"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a7f711e3-8acc-40d6-9664-30afbb5b4244"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4372d293-7bb6-4567-892f-f6e757ee78cd"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="011be9f6-1511-4489-85c2-3e1fd4cb98c6"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4372d293-7bb6-4567-892f-f6e757ee78cd"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cec0c4e4-4be6-4005-aed6-e89172c74ce5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="011be9f6-1511-4489-85c2-3e1fd4cb98c6"
+            name="MessageOccurrenceSpecification3">
+            <event>
+              <receiveOperationEventMoniker
+                Id="703da0e4-38e5-4a0b-b2dc-72057d068a2d"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a7f711e3-8acc-40d6-9664-30afbb5b4244"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c13965f2-2b2c-4718-92c7-fbe40eced018"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f9fefabc-7cbe-4688-8ae3-606e5bb6b1c1"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2a791d1d-9654-4f00-adf3-fb8f24468745"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4ef985c0-7221-4de2-89ed-c5edd43ba189"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d1eea39f-f690-4df7-96b8-3529def9a9ce"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f41c8433-657e-4f26-8fb1-af5b27ee2bb8"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4ef985c0-7221-4de2-89ed-c5edd43ba189"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d04ae92b-e04d-441a-84fe-875319c581cf"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d1eea39f-f690-4df7-96b8-3529def9a9ce"
+            name="MessageOccurrenceSpecification9">
+            <event>
+              <receiveOperationEventMoniker
+                Id="ae7f7fff-5875-4485-89ab-dba2bf86267b"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8631d64b-ab10-435e-9556-dd7d3f3d952b"
+            name="MessageOccurrenceSpecification8">
+            <event>
+              <sendOperationEventMoniker
+                Id="2e46e36c-08ab-478d-bc25-2cb66caad69d"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f41c8433-657e-4f26-8fb1-af5b27ee2bb8"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ec24f15e-30dc-4d2e-83ff-7efa2fbe1f2a"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2a791d1d-9654-4f00-adf3-fb8f24468745"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6f95201e-d755-47ec-8a8d-a4707e7bdc31"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b01c0336-1365-4c0d-a357-736900b99fc9"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d9b8bc5c-2103-4e01-8c7d-c91ac0bebebb"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2e9101ad-9ce9-4bca-bede-01cb5094e9ac"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e859c72b-e488-419a-818d-cd3ad89d6eb2"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="00968012-51de-40a2-b677-2c41af9ecee9"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2e9101ad-9ce9-4bca-bede-01cb5094e9ac"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="acd823d7-1eec-4185-9db3-0fa16ba1715f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e859c72b-e488-419a-818d-cd3ad89d6eb2"
+            name="MessageOccurrenceSpecification13">
+            <event>
+              <receiveOperationEventMoniker
+                Id="974b517d-e57c-469f-befb-7b3955eeb6ac"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3ade7c7c-954e-4658-b0b0-fc9b80037d2d"
+            name="MessageOccurrenceSpecification12">
+            <event>
+              <sendOperationEventMoniker
+                Id="043e904e-3180-4056-a363-4cc1b3c0a955"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="00968012-51de-40a2-b677-2c41af9ecee9"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="aae24be9-8555-417b-b06d-e1d4190d452f"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d9b8bc5c-2103-4e01-8c7d-c91ac0bebebb"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="79b5eca9-b344-49ed-bdfe-b1e9ba36c3e4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b0eabc7d-0429-45bc-9ce1-bfcf32e2e204"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="547969fa-4b81-4418-a286-7183236a8633"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4efe903e-dec1-4256-9b39-9f4e9840dba3"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="dc4dbbe3-4fc1-4890-a9fc-70c5091a0a0e"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="059d0b79-ba11-4a0f-8bca-84d6bafa8283"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4efe903e-dec1-4256-9b39-9f4e9840dba3"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="dcc6a700-2c88-4883-9c3f-faf236f3d8bb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9b563003-316d-4884-ad7a-73e5fa0d610b"
+            name="MessageOccurrenceSpecification16">
+            <event>
+              <sendOperationEventMoniker
+                Id="74aa6f1d-2bac-4207-be6b-7fc171bc067d"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dc4dbbe3-4fc1-4890-a9fc-70c5091a0a0e"
+            name="MessageOccurrenceSpecification17">
+            <event>
+              <receiveOperationEventMoniker
+                Id="008ba95a-9f7f-42f0-bbda-275a9051b88a"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ea979081-75cf-4ba6-b014-e3492ba3ca72"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="059d0b79-ba11-4a0f-8bca-84d6bafa8283"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="547969fa-4b81-4418-a286-7183236a8633"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8c82e0e4-a98d-45fb-9b15-76a16baa77fd"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+                LastKnownName="dungeon : Dungeon"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="31c19774-8e4c-40ed-97f4-432125365ab3"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="df4dcbf6-521c-4305-a480-9536d8e03f44"
+                LastKnownName="dungeonMap : DungeonMap"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="08677f19-1421-4c88-b95f-f7d32a23eef7"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="50d97682-9af5-4249-a60e-273760dfd023"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="755f95f6-74fe-430e-b4f3-1142215a1e50"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="618d704b-093e-4cb9-9b51-16264636627c"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="50d97682-9af5-4249-a60e-273760dfd023"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="66caf92f-054f-44e8-aff9-f138479d0a0c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df4dcbf6-521c-4305-a480-9536d8e03f44"
+                LastKnownName="dungeonMap : DungeonMap"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="755f95f6-74fe-430e-b4f3-1142215a1e50"
+            name="MessageOccurrenceSpecification21">
+            <event>
+              <receiveOperationEventMoniker
+                Id="268de35b-c12d-41f6-8cdf-4bf21b91550d"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df4dcbf6-521c-4305-a480-9536d8e03f44"
+                LastKnownName="dungeonMap : DungeonMap"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c4ea3eb1-1479-471b-9d7c-b573305378d7"
+            name="MessageOccurrenceSpecification20">
+            <event>
+              <sendOperationEventMoniker
+                Id="24950c03-b1df-47a8-b509-6b6d832ab8aa"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="618d704b-093e-4cb9-9b51-16264636627c"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="df4dcbf6-521c-4305-a480-9536d8e03f44"
+                LastKnownName="dungeonMap : DungeonMap"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8a9327fd-e066-4c33-b7f9-83118ac4e3c4"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="08677f19-1421-4c88-b95f-f7d32a23eef7"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="31b8b874-267c-4926-9b7e-ba6f4cd942a4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df4dcbf6-521c-4305-a480-9536d8e03f44"
+                LastKnownName="dungeonMap : DungeonMap"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <combinedFragment
+            Id="b1458795-c611-4e87-9a3e-e75cb9b652a3"
+            name="CombinedFragment1"
+            interactionOperator="Alt">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="0fa0a071-0343-45bd-a611-1963bd773774"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                    LastKnownName="ConsoleDungeonControler"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                  <lifelineMoniker
+                    Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                    LastKnownName="character : Character"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="4174f65b-d924-463f-ba54-fa8bc0d7f1e8"
+                    guardText="if Valid Move" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="d70afef5-8225-4d55-ba76-3ff95b38818b"
+                    LastKnownName="OperandOccurrenceSpecification13"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="3ed31b04-2dc5-4fc1-88b9-fdcae1645794"
+                    LastKnownName="OperandOccurrenceSpecification14"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="ad14cfaa-4019-45fa-8ee7-ea1026ea9c2b"
+                    LastKnownName="OperandOccurrenceSpecification15"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="dd79cf0c-513a-4ace-bf17-76e75b107425"
+                    LastKnownName="OperandOccurrenceSpecification16"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand
+                Id="934c2d90-2715-487e-a3f0-ecf3a717a03e"
+                name="InteractionOperand2">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                    LastKnownName="ConsoleDungeonControler"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                  <lifelineMoniker
+                    Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                    LastKnownName="character : Character"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="00af7eca-b82f-46d9-a986-5379e8f41395" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="ec0db98e-5950-4d03-abf0-4e1ebdf1ff43"
+                    LastKnownName="OperandOccurrenceSpecification17"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="412ac911-27da-4423-8b79-856cb16b9c4d"
+                    LastKnownName="OperandOccurrenceSpecification18"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="a3fd7778-7040-4dfb-8183-ba527189226d"
+                    LastKnownName="OperandOccurrenceSpecification19"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="0187ebbf-099b-4036-8b1c-635a506524a5"
+                    LastKnownName="OperandOccurrenceSpecification20"
+                    LastKnownLocation="OOP-DungeonModel.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="d70afef5-8225-4d55-ba76-3ff95b38818b"
+            name="OperandOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="ad14cfaa-4019-45fa-8ee7-ea1026ea9c2b"
+            name="OperandOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="bfa12957-3336-4959-8c8d-eff533bb6210"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="23ae5d98-2d39-49bf-b865-9dbae52c97cc"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="99959fbf-55f9-4c77-b69a-a7b9b5bf8435"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5fb75387-2e25-4eee-8820-a73eccb738c7"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="475867a1-242e-4f80-9a78-8851367be0d1"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="99959fbf-55f9-4c77-b69a-a7b9b5bf8435"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4095d43e-d12e-479b-802c-5c7c8e6c7250"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5fb75387-2e25-4eee-8820-a73eccb738c7"
+            name="MessageOccurrenceSpecification25">
+            <event>
+              <receiveOperationEventMoniker
+                Id="e6dfc5de-b134-4262-aebd-114db5241d4b"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7b5e9d54-a6ef-47ce-aa0f-d8320900d48f"
+            name="MessageOccurrenceSpecification24">
+            <event>
+              <sendOperationEventMoniker
+                Id="d5781d9b-8fb4-46c5-bdc8-e39508c333a9"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="475867a1-242e-4f80-9a78-8851367be0d1"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="767fd4f6-43e1-4a6a-8c53-d8883d0ad38f"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="23ae5d98-2d39-49bf-b865-9dbae52c97cc"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9cf855d8-826b-4da2-81d4-01ca282e1641"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="3ed31b04-2dc5-4fc1-88b9-fdcae1645794"
+            name="OperandOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="dd79cf0c-513a-4ace-bf17-76e75b107425"
+            name="OperandOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="ec0db98e-5950-4d03-abf0-4e1ebdf1ff43"
+            name="OperandOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="a3fd7778-7040-4dfb-8183-ba527189226d"
+            name="OperandOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="0187ebbf-099b-4036-8b1c-635a506524a5"
+            name="OperandOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="412ac911-27da-4423-8b79-856cb16b9c4d"
+            name="OperandOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+                LastKnownName="character : Character"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="fee61613-b6f6-4597-b532-750baedc2990"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e7c4acd9-395c-440a-8c6c-9d423f424371"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="OOP-DungeonModel.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="8cad0f7b-7668-4162-bcd3-1c1ec6d6677c"
+            name="ConsoleDungeonControler"
+            isActor="false"
+            lifelineDisplayName="ConsoleDungeonControler">
+            <represents>
+              <propertyMoniker
+                Id="b96cbf58-c119-44a3-b9ce-ca510efda5ed"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a0878f14-e0e2-487c-a4d9-10017281ccd7"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="fee61613-b6f6-4597-b532-750baedc2990"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="cadc28a9-7dd0-44c1-b38a-3d6a46a21a49"
+            name="dungeon : Dungeon"
+            isActor="false"
+            lifelineDisplayName="dungeon : Dungeon">
+            <represents>
+              <propertyMoniker
+                Id="8df4e287-bee3-4aa3-8436-f7dfe2a0e892"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="4ef985c0-7221-4de2-89ed-c5edd43ba189"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2a791d1d-9654-4f00-adf3-fb8f24468745"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4efe903e-dec1-4256-9b39-9f4e9840dba3"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="547969fa-4b81-4418-a286-7183236a8633"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="80bf6608-8b30-42b0-915e-a64ff45f3ba1"
+            name="character : Character"
+            isActor="false"
+            lifelineDisplayName="character : Character">
+            <represents>
+              <propertyMoniker
+                Id="123742d8-def3-40f3-a805-1cbfa7067812"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="2e9101ad-9ce9-4bca-bede-01cb5094e9ac"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d9b8bc5c-2103-4e01-8c7d-c91ac0bebebb"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="d70afef5-8225-4d55-ba76-3ff95b38818b"
+                LastKnownName="OperandOccurrenceSpecification13"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="99959fbf-55f9-4c77-b69a-a7b9b5bf8435"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="23ae5d98-2d39-49bf-b865-9dbae52c97cc"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="3ed31b04-2dc5-4fc1-88b9-fdcae1645794"
+                LastKnownName="OperandOccurrenceSpecification14"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ec0db98e-5950-4d03-abf0-4e1ebdf1ff43"
+                LastKnownName="OperandOccurrenceSpecification17"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="412ac911-27da-4423-8b79-856cb16b9c4d"
+                LastKnownName="OperandOccurrenceSpecification18"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="df4dcbf6-521c-4305-a480-9536d8e03f44"
+            name="dungeonMap : DungeonMap"
+            isActor="false"
+            lifelineDisplayName="dungeonMap : DungeonMap">
+            <represents>
+              <propertyMoniker
+                Id="c61d3ada-2b4f-4ae8-8554-0e3500873d23"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="50d97682-9af5-4249-a60e-273760dfd023"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="08677f19-1421-4c88-b95f-f7d32a23eef7"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="311a9aa5-b5a7-4da6-ad9f-a5abe463a236"
+            name="Take Turn"
+            messageKind="Found"
+            messageSort="AsynchCall"
+            createSelfMessage="false"
+            signatureText="+ takeTurn()">
+            <sendEvent>
+              <lostFoundTargetMoniker
+                Id="8494baea-7bc6-449f-9572-000431304602"
+                LastKnownName="LostFoundTarget1"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a02b7ea2-e773-4f5e-b136-a2c587cd8400"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d61301a8-6ed1-492b-9c6b-5546e7563ab0"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true"
+            signatureText="- getValidKey()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1f9cae58-99ab-42c6-9b84-3ecd95dc3030"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="011be9f6-1511-4489-85c2-3e1fd4cb98c6"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="47a18d80-97e2-4eab-b531-8790663c743a"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ getPlayer()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8631d64b-ab10-435e-9556-dd7d3f3d952b"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d1eea39f-f690-4df7-96b8-3529def9a9ce"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2172c0ba-cc8d-4507-9e58-76cb83ebf3ea"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f41c8433-657e-4f26-8fb1-af5b27ee2bb8"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ec24f15e-30dc-4d2e-83ff-7efa2fbe1f2a"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="14a157d6-9f37-47ad-8e09-20d1c3328398"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ getNewPosition()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3ade7c7c-954e-4658-b0b0-fc9b80037d2d"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e859c72b-e488-419a-818d-cd3ad89d6eb2"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8dd71751-42be-420e-be8d-4f8f56379c9c"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="00968012-51de-40a2-b677-2c41af9ecee9"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="aae24be9-8555-417b-b06d-e1d4190d452f"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4effd176-5ce3-4a3a-a3a3-f720ade96f7b"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ geMap()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9b563003-316d-4884-ad7a-73e5fa0d610b"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dc4dbbe3-4fc1-4890-a9fc-70c5091a0a0e"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9dc1645c-6137-4c91-8894-4eaef950c569"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="059d0b79-ba11-4a0f-8bca-84d6bafa8283"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ea979081-75cf-4ba6-b014-e3492ba3ca72"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4e519f04-6e85-40cc-805f-8a3641debc0f"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ isValidMove()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c4ea3eb1-1479-471b-9d7c-b573305378d7"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="755f95f6-74fe-430e-b4f3-1142215a1e50"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dac1c01b-519c-4619-a70b-78ae90befccb"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="618d704b-093e-4cb9-9b51-16264636627c"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8a9327fd-e066-4c33-b7f9-83118ac4e3c4"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f3986a19-a873-45ba-b6fe-4570dd4a8e79"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false"
+            signatureText="+ move()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7b5e9d54-a6ef-47ce-aa0f-d8320900d48f"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5fb75387-2e25-4eee-8820-a73eccb738c7"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="64ec75bf-5285-4a71-a04a-14f4358929ea"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="475867a1-242e-4f80-9a78-8851367be0d1"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="767fd4f6-43e1-4a6a-8c53-d8883d0ad38f"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="OOP-DungeonModel.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="b96cbf58-c119-44a3-b9ce-ca510efda5ed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="2146ebc5-8ae8-49ac-a1af-374ce19dc4e4"
+                LastKnownName="ConsoleDungeonControler"
+                LastKnownLocation="Package_1029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8df4e287-bee3-4aa3-8436-f7dfe2a0e892"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="61ecda3f-1ba9-4ae6-8aef-b77797d07e9d"
+                LastKnownName="Dungeon"
+                LastKnownLocation="Package_0946.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="123742d8-def3-40f3-a805-1cbfa7067812"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="f1ebcd46-e213-4cb0-88c0-65a48b8f8cf5"
+                LastKnownName="Character"
+                LastKnownLocation="Package_0946.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c61d3ada-2b4f-4ae8-8554-0e3500873d23"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="8b3b4ef2-a7ba-44c5-b3e4-de2a1a07e3b6"
+                LastKnownName="DungeonMap"
+                LastKnownLocation="Package_0946.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8f104d8e-12b2-4fb8-86d1-2d2b6bb4a10e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e7c4acd9-395c-440a-8c6c-9d423f424371"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="25b72055-64b6-4c52-839a-66417c9d04c8">
+        <operation>
+          <operationMoniker
+            Id="2cb7cb34-7a39-4cc3-bb3e-85be6995f6c0"
+            LastKnownName="takeTurn"
+            LastKnownLocation="Package_1029.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cec0c4e4-4be6-4005-aed6-e89172c74ce5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c13965f2-2b2c-4718-92c7-fbe40eced018"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="bc35e0b4-a3f5-4c2e-91df-13e0c6149db5">
+        <operation>
+          <operationMoniker
+            Id="3720c04f-fd4c-4ef8-864a-712caa0e1cae"
+            LastKnownName="getValidKey"
+            LastKnownLocation="Package_1029.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="703da0e4-38e5-4a0b-b2dc-72057d068a2d">
+        <operation>
+          <operationMoniker
+            Id="3720c04f-fd4c-4ef8-864a-712caa0e1cae"
+            LastKnownName="getValidKey"
+            LastKnownLocation="Package_1029.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d04ae92b-e04d-441a-84fe-875319c581cf"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6f95201e-d755-47ec-8a8d-a4707e7bdc31"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="2e46e36c-08ab-478d-bc25-2cb66caad69d">
+        <operation>
+          <operationMoniker
+            Id="379c72a5-14d5-4545-a913-2289f7c40d44"
+            LastKnownName="getPlayer"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="ae7f7fff-5875-4485-89ab-dba2bf86267b">
+        <operation>
+          <operationMoniker
+            Id="379c72a5-14d5-4545-a913-2289f7c40d44"
+            LastKnownName="getPlayer"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="acd823d7-1eec-4185-9db3-0fa16ba1715f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="79b5eca9-b344-49ed-bdfe-b1e9ba36c3e4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="043e904e-3180-4056-a363-4cc1b3c0a955">
+        <operation>
+          <operationMoniker
+            Id="476ce217-4f68-4444-b370-71a9a9e62877"
+            LastKnownName="getNewPosition"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="974b517d-e57c-469f-befb-7b3955eeb6ac">
+        <operation>
+          <operationMoniker
+            Id="476ce217-4f68-4444-b370-71a9a9e62877"
+            LastKnownName="getNewPosition"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="dcc6a700-2c88-4883-9c3f-faf236f3d8bb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8c82e0e4-a98d-45fb-9b15-76a16baa77fd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="74aa6f1d-2bac-4207-be6b-7fc171bc067d">
+        <operation>
+          <operationMoniker
+            Id="e3b64f2d-b39c-464c-862d-4fd9a828f4f8"
+            LastKnownName="geMap"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="008ba95a-9f7f-42f0-bbda-275a9051b88a">
+        <operation>
+          <operationMoniker
+            Id="e3b64f2d-b39c-464c-862d-4fd9a828f4f8"
+            LastKnownName="geMap"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="66caf92f-054f-44e8-aff9-f138479d0a0c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="31b8b874-267c-4926-9b7e-ba6f4cd942a4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="24950c03-b1df-47a8-b509-6b6d832ab8aa">
+        <operation>
+          <operationMoniker
+            Id="ad13b6a7-e16a-42b8-9add-e656a7bd69ba"
+            LastKnownName="isValidMove"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="268de35b-c12d-41f6-8cdf-4bf21b91550d">
+        <operation>
+          <operationMoniker
+            Id="ad13b6a7-e16a-42b8-9add-e656a7bd69ba"
+            LastKnownName="isValidMove"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4095d43e-d12e-479b-802c-5c7c8e6c7250"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9cf855d8-826b-4da2-81d4-01ca282e1641"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="d5781d9b-8fb4-46c5-bdc8-e39508c333a9">
+        <operation>
+          <operationMoniker
+            Id="b5c80691-39ac-4951-8add-4e3ad2d5be51"
+            LastKnownName="move"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="e6dfc5de-b134-4262-aebd-114db5241d4b">
+        <operation>
+          <operationMoniker
+            Id="b5c80691-39ac-4951-8add-4e3ad2d5be51"
+            LastKnownName="move"
+            LastKnownLocation="Package_0946.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
